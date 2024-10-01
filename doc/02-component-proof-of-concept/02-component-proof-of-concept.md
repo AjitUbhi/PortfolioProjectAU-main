@@ -2,11 +2,11 @@
 
 - **Name**: Ajit Ubhi
 - **Dot Number**:ubhi.4
-- **Due Date**: October 3rd
+- **Due Date**: October
 
 ## Assignment Overview
 
-
+<!-- TODO: read the assignment overview then delete this comment -->
 
 Previously, you brainstormed three ideas, and hopefully you got some feedback as
 well. However, it's impossible to know how reasonable your design actually is
@@ -237,5 +237,4 @@ better for future students.
 <!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [pottery-fails]: https://www.youtube.com/shorts/Kqb9l113F_0?feature=share
-[markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
