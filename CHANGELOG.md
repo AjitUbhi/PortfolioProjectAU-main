@@ -1,3 +1,6 @@
+```markdown
+
+# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
@@ -7,8 +10,27 @@ the following form: YYYY.0M.0D.
 ## 2024.16.09
 
 ### Added
-```
+
 - Designed a CarData component
 - Designed a Student Calander component
 - Designed a BankAccount component
+
+
+## 2024.10.03
+
+### Added
+
+- Designed a proof of concept for carData component
+
+
+## 2024.10.16
+
+### Added
+
+- Designed kernel and enhanced interfaces for carData component
+
+### Updated
+
+- Added javadoc comments to proof of concept
+
 ```
