@@ -8,6 +8,16 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
+- Designed abstract class for CarData component
+
+### Updated
+
+- Added DS_Store to gitignore
+
+## 2024.11.14
+
+### Added
+
 - Designed kernel and enhanced interfaces for CarData component
 
 ### Updated
