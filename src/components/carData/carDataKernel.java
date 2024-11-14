@@ -1,58 +1,68 @@
 package components.carData;
 
+import components.standard.Standard;
+
 /**
  * Contains the kernel methods for the carData Component.
  */
-public interface carDataKernel {
+public interface CarDataKernel extends Standard<CarData> {
     /**
-     * Set the make of the car.
+     * Sets the make of the car.
      *
      * @param make
-     *            The manufacturer of the car
+     *            the make of the car
      */
     void setMake(String make);
 
     /**
-     * Set the model of the car.
+     * Sets the model of the car.
      *
      * @param model
-     *            The specific car made
+     *            the model of the car
      */
     void setModel(String model);
 
     /**
-     * Set the year of the car.
+     * Sets the manufacturing year of the car.
      *
      * @param year
-     *            The year the car was produced
+     *            the manufacturing year of the car
      */
     void setYear(int year);
 
     /**
-     * Set or change the milage of the car.
+     * Updates or sets the current mileage of the car.
      *
      * @param mileage
-     *            The amount the car has been driven
+     *            the current mileage of the car
      */
     void updateMileage(int mileage);
 
     /**
-     * @return returns the make of the car.
+     * Returns the make of the car.
+     *
+     * @return the make of the car
      */
     String getMake();
 
     /**
-     * @return returns the model of the car.
+     * Returns the model of the car.
+     *
+     * @return the model of the car
      */
     String getModel();
 
     /**
-     * @return returns the year of the car.\
+     * Returns the manufacturing year of the car.
+     *
+     * @return the manufacturing year of the car
      */
     int getYear();
 
     /**
-     * @return returns the mileage of the car.
+     * Returns the current mileage of the car.
+     *
+     * @return the current mileage of the car
      */
     int getMileage();
 }

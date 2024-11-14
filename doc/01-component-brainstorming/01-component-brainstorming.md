@@ -6,8 +6,6 @@
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
-
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
 implement, but your component must fit within the constraints of our software
@@ -157,10 +155,10 @@ format, we can be more confident that your designs will be possible.
         mutate `this`.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-        - No. All methods work with integers or other NaturalNumbers.
+      - No. All methods work with integers or other NaturalNumbers.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-        - Yes. NaturalNumber is base 10, and we track that in a constant called
+      - Yes. NaturalNumber is base 10, and we track that in a constant called
           `RADIX`.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
@@ -213,7 +211,6 @@ will likely refine your design to make your implementation easier to use.
       Answer, explain, and give at least one example:
       - <!-- TODO: provide an argument then delete this comment -->
 
-
 - Component Design #2: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
     - <!-- TODO: describe your component then delete this comment -->
@@ -234,7 +231,6 @@ will likely refine your design to make your implementation easier to use.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - <!-- TODO: provide an argument then delete this comment -->
-
 
 - Component Design #3: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
