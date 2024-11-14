@@ -47,7 +47,6 @@ methods only.
 
 ## Assignment Checklist
 
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -127,7 +126,6 @@ do good work.
 > rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 > and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-
 ## Assignment Tasks
 
 Your primary task for this assignment is to create an abstract class that falls
@@ -146,7 +144,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -180,7 +177,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -234,7 +230,6 @@ better for future students.
 
 <!-- TODO: follow the link to share your feedback then delete this comment -->
 
-[markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
 [lab-14]: https://web.cse.ohio-state.edu/software/2221/web-sw1/extras/instructions/natural-number-static/natural-number-static.html
 [lab-21]: https://web.cse.ohio-state.edu/software/2221/web-sw1/extras/instructions/set-instance-methods/set-instance-methods.html
 [simple-writer-secondary]: https://web.cse.ohio-state.edu/software/common/doc/src-html/components/simplewriter/SimpleWriterSecondary.html
