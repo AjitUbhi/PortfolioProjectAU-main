@@ -11,6 +11,7 @@ public interface CarDataKernel extends Standard<CarData> {
      *
      * @param make
      *            the make of the car
+     * @ensures the make of {@code this} is {@code make}
      */
     void setMake(String make);
 
@@ -19,6 +20,7 @@ public interface CarDataKernel extends Standard<CarData> {
      *
      * @param model
      *            the model of the car
+     * @ensures the model of {@code this} is {@code model}
      */
     void setModel(String model);
 
@@ -27,6 +29,7 @@ public interface CarDataKernel extends Standard<CarData> {
      *
      * @param year
      *            the manufacturing year of the car
+     * @ensures the year of {@code this} is {@code year}
      */
     void setYear(int year);
 
@@ -35,6 +38,7 @@ public interface CarDataKernel extends Standard<CarData> {
      *
      * @param mileage
      *            the current mileage of the car
+     * @ensures the mileage of {@code this} is {@code mileage}
      */
     void updateMileage(int mileage);
 
@@ -42,6 +46,8 @@ public interface CarDataKernel extends Standard<CarData> {
      * Returns the make of the car.
      *
      * @return the make of the car
+     *
+     * @ensures getMake returns the make of {@code this}
      */
     String getMake();
 
@@ -49,6 +55,8 @@ public interface CarDataKernel extends Standard<CarData> {
      * Returns the model of the car.
      *
      * @return the model of the car
+     *
+     * @ensures getModel returns the model of {@code this}
      */
     String getModel();
 
@@ -56,6 +64,8 @@ public interface CarDataKernel extends Standard<CarData> {
      * Returns the manufacturing year of the car.
      *
      * @return the manufacturing year of the car
+     *
+     * @ensures getYear returns the year of {@code this}
      */
     int getYear();
 
@@ -63,6 +73,8 @@ public interface CarDataKernel extends Standard<CarData> {
      * Returns the current mileage of the car.
      *
      * @return the current mileage of the car
+     *
+     * @ensures getYear returns the year of {@code this}
      */
     int getMileage();
 }

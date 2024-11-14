@@ -28,6 +28,7 @@ public class CarData1L extends CarDataSecondary {
      *
      * @param make
      *            the make of the car
+     * @ensures this.getMake() == make
      */
     @Override
     public void setMake(String make) {
@@ -39,6 +40,7 @@ public class CarData1L extends CarDataSecondary {
      *
      * @param model
      *            the model of the car
+     * @ensures this.getModel() == model
      */
     @Override
     public void setModel(String model) {
@@ -50,6 +52,7 @@ public class CarData1L extends CarDataSecondary {
      *
      * @param year
      *            the manufacturing year of the car
+     * @ensures this.getYear() == year
      */
     @Override
     public void setYear(int year) {
@@ -61,6 +64,7 @@ public class CarData1L extends CarDataSecondary {
      *
      * @param mileage
      *            the current mileage of the car
+     * @ensures this.getMileage() == mileage
      */
     @Override
     public void updateMileage(int mileage) {
@@ -71,6 +75,7 @@ public class CarData1L extends CarDataSecondary {
      * Returns the make of the car.
      *
      * @return the make of the car
+     * @ensures \result == this.make
      */
     @Override
     public String getMake() {
@@ -81,6 +86,7 @@ public class CarData1L extends CarDataSecondary {
      * Returns the model of the car.
      *
      * @return the model of the car
+     * @ensures \result == this.model
      */
     @Override
     public String getModel() {
@@ -91,6 +97,7 @@ public class CarData1L extends CarDataSecondary {
      * Returns the manufacturing year of the car.
      *
      * @return the manufacturing year of the car
+     * @ensures \result == this.year
      */
     @Override
     public int getYear() {
@@ -101,6 +108,7 @@ public class CarData1L extends CarDataSecondary {
      * Returns the current mileage of the car.
      *
      * @return the current mileage of the car
+     * @ensures \result == this.mileage
      */
     @Override
     public int getMileage() {
@@ -118,6 +126,8 @@ public class CarData1L extends CarDataSecondary {
      *            the manufacturing year of the car
      * @param mileage
      *            the current mileage of the car
+     * @ensures this.getMake() == make && this.getModel() == model &&
+     *          this.getYear() == year && this.getMileage() == mileage
      */
     private void createNewRep(String make, String model, int year,
             int mileage) {
@@ -130,6 +140,9 @@ public class CarData1L extends CarDataSecondary {
 
     /**
      * No-argument constructor.
+     *
+     * @ensures this.getMake().equals("") && this.getModel().equals("") &&
+     *          this.getYear() == 0 && this.getMileage() == 0
      */
     public CarData1L() {
         this.createNewRep("", "", 0, 0);
@@ -145,26 +158,47 @@ public class CarData1L extends CarDataSecondary {
         }
     }
 
+    /**
+     * Transfers data from the specified CarData object to this object, then
+     * clears the specified object.
+     *
+     * @param arg0
+     *            the source CarData object to transfer from
+     * @ensures this.getMake() == arg0.getMake() && this.getModel() ==
+     *          arg0.getModel() && this.getYear() == arg0.getYear() &&
+     *          this.getMileage() == arg0.getMileage() &&
+     *          arg0.getMake().equals("") && arg0.getModel().equals("") &&
+     *          arg0.getYear() == 0 && arg0.getMileage() == 0
+     */
     @Override
-    public void transferFrom(CarData arg0){
-        assert source != null : "Violation of: source is not null";
-        assert source != this : "Violation of: source is not this";
-        assert source instanceof CarData1L<?> : ""
+    public void transferFrom(CarData arg0) {
+        assert arg0 != null : "Violation of: source is not null";
+        assert arg0 != this : "Violation of: source is not this";
+        assert arg0 instanceof CarData1L : ""
                 + "Violation of: source is of dynamic type CarData1L";
-        /*
-         * This cast cannot fail since the assert above would have stopped
-         * execution in that case: source must be of dynamic type Set3a<?>, and
-         * the ? must be T or the call would not have compiled.
-         */
-        CarData1L localSource = (CaraData1L) source;
-        this.car = localSource.car;
-        localSource.createNewRep("", "", 0, 0);
+        // Cast arg0 to CarData1L and perform the transfer
+        CarData1L localSource = (CarData1L) arg0;
+        this.make = localSource.make;
+        this.model = localSource.model;
+        this.year = localSource.year;
+        this.mileage = localSource.mileage;
+
+        // Clear the source
+        localSource.clear();
     }
 
+    /**
+     * Clears all data of this CarData object, setting it to default values.
+     *
+     * @ensures this.getMake().equals("") && this.getModel().equals("") &&
+     *          this.getYear() == 0 && this.getMileage() == 0
+     */
     @Override
     public void clear() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+        this.make = "";
+        this.model = "";
+        this.year = 0;
+        this.mileage = 0;
     }
 
 }
