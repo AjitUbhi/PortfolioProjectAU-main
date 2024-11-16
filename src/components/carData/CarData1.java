@@ -5,7 +5,7 @@ package components.carData;
  * the main method that creates a CarData object, sets its properties, and
  * displays its details.
  */
-public class CarData1L extends CarDataSecondary {
+public class CarData1 extends CarDataSecondary {
     /**
      * Make of car.
      */
@@ -131,7 +131,7 @@ public class CarData1L extends CarDataSecondary {
     /**
      * No-argument constructor.
      */
-    public CarData1L() {
+    public CarData1() {
         this.createNewRep("", "", 0, 0);
     }
 
@@ -146,25 +146,27 @@ public class CarData1L extends CarDataSecondary {
     }
 
     @Override
-    public void transferFrom(CarData arg0){
+    public void transferFrom(CarData arg0) {
         assert source != null : "Violation of: source is not null";
         assert source != this : "Violation of: source is not this";
-        assert source instanceof CarData1L<?> : ""
+        assert source instanceof CarData1<?> : ""
                 + "Violation of: source is of dynamic type CarData1L";
         /*
          * This cast cannot fail since the assert above would have stopped
          * execution in that case: source must be of dynamic type Set3a<?>, and
          * the ? must be T or the call would not have compiled.
          */
-        CarData1L localSource = (CaraData1L) source;
+        CarData1L localSource = (CaraData1) source;
         this.car = localSource.car;
         localSource.createNewRep("", "", 0, 0);
     }
 
     @Override
     public void clear() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+        this.make = "";
+        this.model = "";
+        this.year = 0;
+        this.mileage = 0;
     }
 
 }
