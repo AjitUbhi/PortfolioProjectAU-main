@@ -146,7 +146,7 @@ public class CarData1L extends CarDataSecondary {
     }
 
     @Override
-    public final void transferFrom(CarData1L source) {
+    public void transferFrom(CarData arg0){
         assert source != null : "Violation of: source is not null";
         assert source != this : "Violation of: source is not this";
         assert source instanceof CarData1L<?> : ""
@@ -160,4 +160,11 @@ public class CarData1L extends CarDataSecondary {
         this.car = localSource.car;
         localSource.createNewRep("", "", 0, 0);
     }
+
+    @Override
+    public void clear() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+    }
+
 }
