@@ -1,5 +1,4 @@
-package components.carData;
-
+package components.CarData;
 import components.standard.Standard;
 
 /**

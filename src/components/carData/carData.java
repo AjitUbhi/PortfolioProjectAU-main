@@ -1,4 +1,4 @@
-package components.carData;
+package components.CarData;
 
 /**
  * Represents a car and manages its information including make, model, year, and

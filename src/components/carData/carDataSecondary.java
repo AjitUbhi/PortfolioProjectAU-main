@@ -1,4 +1,4 @@
-package components.carData;
+package components.CarData;
 
 /**
  * Contains the secondary methods for the carData Component.
@@ -31,7 +31,7 @@ public abstract class CarDataSecondary implements CarData {
     public boolean isVintage() {
         return (2024 - this.getYear()) > 25; // Assuming the current year is 2024
     }
-
+    /**
      *
      * @return a string with the details of the car
      * @ensures \result.equals("CarData{make=" + this.getMake() + ", model=" +
