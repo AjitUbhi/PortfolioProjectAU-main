@@ -9,6 +9,9 @@ public abstract class CarDataSecondary implements CarData {
      * Returns a formatted string containing all details of the car.
      *
      * @return a string with car details
+     * @ensures \result.equals("Car Make: " + this.getMake() + ", Model: " +
+     *          this.getModel() + ", Year: " + this.getYear() + ", Mileage: " +
+     *          this.getMileage())
      */
     @Override
     public String getCarDetails() {
@@ -22,6 +25,7 @@ public abstract class CarDataSecondary implements CarData {
      * it is older than 25 years.
      *
      * @return true if the car is vintage; false otherwise
+     * @ensures \result == ((2024 - this.getYear()) > 25)
      */
     @Override
     public boolean isVintage() {
