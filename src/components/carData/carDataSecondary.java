@@ -31,6 +31,7 @@ public abstract class CarDataSecondary implements CarData {
     public boolean isVintage() {
         return (2024 - this.getYear()) > 25; // Assuming the current year is 2024
     }
+
     /**
      *
      * @return a string with the details of the car
