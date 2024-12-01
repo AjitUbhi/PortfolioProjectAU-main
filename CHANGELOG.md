@@ -4,15 +4,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2024.12.01
+
+### Added
+
+- Designed test suite for CarData component
+- Designed two different use cases for CarData component
+
+## 2024.11.24
 
 ### Added
 
 - Designed kernel implementation for CarData component
-
-### Updated
-
-- Changed design to include
 
 ## 2024.11.14
 
