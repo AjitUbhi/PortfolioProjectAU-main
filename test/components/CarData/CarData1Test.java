@@ -33,7 +33,7 @@ class CarData1Test {
         assertEquals(50000, car.getMileage());
     }
 
-    @org.junit.Test
+    @Test
     void testClear() {
         CarData1 car = new CarData1();
         car.setMake("Ford");
