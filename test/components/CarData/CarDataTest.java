@@ -26,7 +26,7 @@ class CarDataSecondaryTest {
 
     @Test
     void testToString() {
-        CarData1 car = new CarData1(); 
+        CarData1 car = new CarData1();
         car.setMake("Tesla");
         car.setModel("Model S");
         car.setYear(2020);
@@ -48,9 +48,9 @@ class CarDataSecondaryTest {
         car2.setYear(2018);
         car2.updateMileage(20000);
 
-        assertEquals(car1, car2);
+        assertTrue(car1.equals(car2));
 
         car2.setYear(2015);
-        assertEquals(car1, car2);
+        assertFalse(car1.equals(car2));
     }
 }
