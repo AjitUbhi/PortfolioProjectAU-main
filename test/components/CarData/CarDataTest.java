@@ -6,7 +6,7 @@ class CarDataSecondaryTest {
 
     @Test
     void testGetCarDetails() {
-        CarData1 car = new CarData1(); // Use the concrete implementation
+        CarData1 car = new CarData1();
         car.setMake("Honda");
         car.setModel("Civic");
         car.setYear(2015);
@@ -16,7 +16,7 @@ class CarDataSecondaryTest {
 
     @Test
     void testIsVintage() {
-        CarData1 car = new CarData1(); // Use the concrete implementation
+        CarData1 car = new CarData1();
         car.setYear(1995);
         assertEquals(car.isVintage(), true);
 
@@ -26,7 +26,7 @@ class CarDataSecondaryTest {
 
     @Test
     void testToString() {
-        CarData1 car = new CarData1(); // Use the concrete implementation
+        CarData1 car = new CarData1(); 
         car.setMake("Tesla");
         car.setModel("Model S");
         car.setYear(2020);
