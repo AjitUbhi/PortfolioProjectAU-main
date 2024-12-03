@@ -146,18 +146,21 @@ public class CarData1 extends CarDataSecondary {
     }
 
     @Override
-    public void transferFrom(CarData arg0) {
+    public void transferFrom(CarData source) {
         assert source != null : "Violation of: source is not null";
         assert source != this : "Violation of: source is not this";
-        assert source instanceof CarData1<?> : ""
+        assert source instanceof CarData1 : ""
                 + "Violation of: source is of dynamic type CarData1L";
         /*
          * This cast cannot fail since the assert above would have stopped
          * execution in that case: source must be of dynamic type Set3a<?>, and
          * the ? must be T or the call would not have compiled.
          */
-        CarData1L localSource = (CaraData1) source;
-        this.car = localSource.car;
+        CarData1 localSource = (CarData1) source;
+        this.make = localSource.make;
+        this.model = localSource.model;
+        this.year = localSource.year;
+        this.mileage = localSource.mileage;
         localSource.createNewRep("", "", 0, 0);
     }
 
