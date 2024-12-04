@@ -3,6 +3,7 @@
 - **Name**: Ajit Ubhi
 - **Dot Number**: ubhi.4
 - **Due Date**: December 4th 2024
+
 ## Assignment Overview
 
 By now, you should have an entire component implemented at all levels. For
@@ -314,25 +315,27 @@ Yes, the satisfaction you get when completeing a big project and everything work
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Software development, git skills, iterative porject completion
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Software development
+git skills
+iterative porject completion
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I now understand more of how software development works, however I am majoring in Data Analytics I don' tknow how much will be like this. But this project has made me more interested in the software development side of things.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I have a few family friends and coworkers who did data analytics as well so I ask them for advice and help. I need to keep my grades up to get into my major and stay in it.
 
 ### Changelog
 
