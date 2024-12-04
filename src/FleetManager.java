@@ -3,8 +3,20 @@ import components.CarData.CarData1;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Demonstrates the usage of the CarData component for managing a fleet of cars.
+ * This class creates a list of cars, adds multiple cars with various details,
+ * and prints their details to the console, including whether they are vintage.
+ *
+ * @author Ajit Ubhi
+ */
 public final class FleetManager {
+    /**
+     * The main demonstrates creating a fleet of cars and displaying their details.
+     *
+     * @param args
+     *              command-line arguments (not used)
+     */
     public static void main(String[] args) {
         List<CarData> fleet = new ArrayList<>();
 

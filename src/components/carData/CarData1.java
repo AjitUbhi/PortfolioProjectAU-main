@@ -123,7 +123,6 @@ public class CarData1 extends CarDataSecondary {
             int mileage) {
         this.make = make;
         this.model = model;
-
         this.year = year;
         this.mileage = mileage;
     }

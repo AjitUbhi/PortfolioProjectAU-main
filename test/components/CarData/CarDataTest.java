@@ -2,8 +2,15 @@ package components.CarData;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+/**
+ * Tests the secondary methods of the CarData component.
+ * Verifies the methods getCarDetails, isVintage, toString, and equals function correctly.
+ */
 class CarDataSecondaryTest {
-
+    /**
+     * Tests the getCarDetails method to ensure it returns a correctly formatted string
+     * containing all car details.
+     */
     @Test
     void testGetCarDetails() {
         CarData1 car = new CarData1();
@@ -13,7 +20,10 @@ class CarDataSecondaryTest {
         car.updateMileage(30000);
         assertEquals("Car Make: Honda, Model: Civic, Year: 2015, Mileage: 30000", car.getCarDetails());
     }
-
+    /**
+     * Tests the isVintage method to ensure it correctly determines if a car is vintage
+     * based on its year.
+     */
     @Test
     void testIsVintage() {
         CarData1 car = new CarData1();
@@ -23,7 +33,10 @@ class CarDataSecondaryTest {
         car.setYear(2010);
         assertEquals(car.isVintage(), false);
     }
-
+    /**
+     * Tests the toString method to ensure it returns a correctly formatted string
+     * representation of the car's details.
+     */
     @Test
     void testToString() {
         CarData1 car = new CarData1();
@@ -33,7 +46,10 @@ class CarDataSecondaryTest {
         car.updateMileage(15000);
         assertEquals("CarData{make=Tesla, model=Model S, year=2020, mileage=15000}", car.toString());
     }
-
+    /**
+     * Tests the equals method to ensure it correctly determines equality between two
+     * CarData objects based on their properties.
+     */
     @Test
     void testEquals() {
         CarData1 car1 = new CarData1();

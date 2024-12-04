@@ -1,6 +1,9 @@
 import components.CarData.CarData1;
 /**
+ * Demonstrates the usage of the CarData component to check if a car qualifies as vintage.
+ * This class creates a car with specific details and determines if it is vintage.
  *
+ * @author Ajit Ubhi
  */
 public final class VintageCarCheck {
     /**
