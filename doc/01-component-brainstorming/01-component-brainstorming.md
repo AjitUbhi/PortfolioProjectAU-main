@@ -96,15 +96,12 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+My main interest for this project is my CarData component. Since I was younf I have always loved cars and had so many hot wheels cars that I couldnt even count them, granted I didnt really know how to count very high back then. But even now, that enjoyment has continued. I have my own car that I love to drive and modify, worked as a mechanic and am treserur for the car club, so I think it would be fun to combine this project with something that interests me.
+
+First version of his file got deleted, but i only needed to add above part for corrections.
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]

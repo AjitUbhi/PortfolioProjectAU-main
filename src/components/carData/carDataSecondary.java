@@ -25,11 +25,11 @@ public abstract class CarDataSecondary implements CarData {
      * it is older than 25 years.
      *
      * @return true if the car is vintage; false otherwise
-     * @ensures \result == ((2024 - this.getYear()) > 25)
+     * @ensures \result == ((2025 - this.getYear()) > 25)
      */
     @Override
     public boolean isVintage() {
-        return (2024 - this.getYear()) > 25; // Assuming the current year is 2024
+        return (2025 - this.getYear()) > 25; // Assuming the current year is 2025
     }
 
     /**
